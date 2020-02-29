@@ -1,6 +1,6 @@
 {
   "name": "stylis-responsive-properties",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "responsive properties plugin for stylis",
   "main": "dist/index.js",
   "repository": "git@github.com:alexandr-solovyov/stylis-responsive-properties.git",
