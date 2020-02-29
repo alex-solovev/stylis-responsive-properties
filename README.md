@@ -1,6 +1,7 @@
 # stylis-responsive-properties
 
 [Stylis](https://stylis.js.org/) plugin that makes writing responsive styles more easily
+
 [PostCSS](https://postcss.org/](https://postcss.org/) version can be found [here](https://github.com/alexandr-solovyov/postcss-responsive-properties)
 
 ## Example
