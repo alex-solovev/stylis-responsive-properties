@@ -1,0 +1,12 @@
+{
+  "name": "stylis-responsive-properties",
+  "version": "0.0.1",
+  "description": "responsive properties plugin for stylis",
+  "main": "index.js",
+  "repository": "git@github.com:alexandr-solovyov/stylis-responsive-properties.git",
+  "author": "Alex Solovev <alex.solovev.work@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  }
+}
