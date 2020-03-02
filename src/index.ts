@@ -1,4 +1,4 @@
-type MediaTuple = [number, string]
+type MediaTuple = [number, string?]
 
 type PropertyData = {
   selectors: string[] | undefined;
@@ -58,7 +58,7 @@ function mapMediaData(data: PropertyData[]): MediaMap {
 
   for (let entry of data) {
     for (let [mediaValue, propValue] of entry.medias) {
-      const css = `${entry.property}: ${propValue.trim()}`
+      const css = `${entry.property}: ${propValue?.trim()}`
 
       mediaMap = {
         ...mediaMap,
