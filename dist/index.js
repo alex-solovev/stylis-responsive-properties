@@ -80,14 +80,15 @@ function getDefaultValue(medias) {
 }
 function mapMediaData(data) {
     var e_1, _a, e_2, _b, _c;
+    var _d;
     var mediaMap = {};
     try {
         for (var data_1 = __values(data), data_1_1 = data_1.next(); !data_1_1.done; data_1_1 = data_1.next()) {
             var entry = data_1_1.value;
             try {
-                for (var _d = (e_2 = void 0, __values(entry.medias)), _e = _d.next(); !_e.done; _e = _d.next()) {
-                    var _f = __read(_e.value, 2), mediaValue = _f[0], propValue = _f[1];
-                    var css = entry.property + ": " + propValue.trim();
+                for (var _e = (e_2 = void 0, __values(entry.medias)), _f = _e.next(); !_f.done; _f = _e.next()) {
+                    var _g = __read(_f.value, 2), mediaValue = _g[0], propValue = _g[1];
+                    var css = entry.property + ": " + ((_d = propValue) === null || _d === void 0 ? void 0 : _d.trim());
                     mediaMap = __assign(__assign({}, mediaMap), (_c = {}, _c[mediaValue] = __spread((mediaMap[mediaValue] || []), [
                         __spread((entry.selectors || []), [css]),
                     ]), _c));
@@ -96,7 +97,7 @@ function mapMediaData(data) {
             catch (e_2_1) { e_2 = { error: e_2_1 }; }
             finally {
                 try {
-                    if (_e && !_e.done && (_b = _d.return)) _b.call(_d);
+                    if (_f && !_f.done && (_b = _e.return)) _b.call(_e);
                 }
                 finally { if (e_2) throw e_2.error; }
             }
